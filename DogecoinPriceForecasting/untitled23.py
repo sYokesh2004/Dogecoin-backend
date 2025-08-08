@@ -77,11 +77,11 @@ for _ in range(30):
 # # Save the last 30 days (including forecast) to CSV
 # df.tail(30).to_csv("forecast.csv")
 # print("Last 30 days saved as 'forecast.csv'")
-user = 'root'
-password = 'Itsme$k23'
-host = 'localhost'  # or your MySQL host
-port = '3306'       # default MySQL port
-database = 'dogecoinpriceforecasting'
+user = 'postgres'
+password = 'sasikumar23'
+host = 'db.zwcmmwdepxwdfdvxtamb.supabase.co'  # or your MySQL host
+port = '5432'       # default MySQL port
+database = 'postgres'
 
 # Create the SQLAlchemy engine
 engine = create_engine(f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}')
